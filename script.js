@@ -10,22 +10,14 @@ var hour17 = document.getElementById("#hour-17");
 
 var saveBtnEl = $(".saveBtn");
 
-if (localStorage.getItem("hour-9") === null) {
-    var hour9 = ""; 
-} else {
-    var hour9 = localStorage.getItem("hour9");
-}
+var time = moment().format("MMM Do, YYYY", "hh:mm:ss");
+$("#currentDay").text(time);
 
-function saveInput () {
-    hour9 = $("#hour-9").children("textarea").val();
-}
 
 
 
 
  
-var time = moment().format("MMM Do, YYYY", "hh:mm:ss");
-$("#currentDay").text(time);
 
 
 
@@ -36,3 +28,6 @@ $("#currentDay").text(time);
 // use the div to identify which hour where at. 
 // use moment for the current hour. 
 // use IF statements to say which is the current hour, and for which color to go for. 
+
+
+
