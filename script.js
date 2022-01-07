@@ -13,6 +13,9 @@ var saveBtnEl = $(".saveBtn");
 var time = moment().format("MMM Do, YYYY", "hh:mm:ss");
 $("#currentDay").text(time);
 
+// if statement for conditional 
+
+
 
 
 
@@ -25,7 +28,7 @@ $("#currentDay").text(time);
 
 
 
-// use the div to identify which hour where at. 
+
 // use moment for the current hour. 
 // use IF statements to say which is the current hour, and for which color to go for. 
 
