@@ -7,13 +7,26 @@ var hour14 = document.getElementById("#hour-14");
 var hour15 = document.getElementById("#hour-15"); 
 var hour16 = document.getElementById("#hour-16"); 
 var hour17 = document.getElementById("#hour-17"); 
+var past = document.querySelector(".past"); 
+var present = document.querySelector(".present"); 
+var furture = document.querySelector(".future"); 
+var description = document.querySelector(".description")
+
 
 var saveBtnEl = $(".saveBtn");
 
 var time = moment().format("MMM Do, YYYY", "hh:mm:ss");
 $("#currentDay").text(time);
 
-// if statement for conditional 
+function printTextHour() {
+    var task = localStorage.getItem("task")
+    if (task === null) {
+        return;
+    }
+}
+
+
+
 
 
 
